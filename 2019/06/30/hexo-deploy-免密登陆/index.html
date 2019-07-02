@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hexo,">
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="1.将https模式转换为ssh模式 2.设置SSH keys（1）看看 C:\Users\Administrator.ssh里面是否有文件（2）有就删了（3）生成密匙 输入指令 1.git config –global user.email “862396534@qq.com” # 填写你github注册并且验证的邮箱  2.git config –global user.name “mykon">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo deploy 免密登陆">
+<meta property="og:url" content="http://yoursite.com/2019/06/30/hexo-deploy-免密登陆/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.将https模式转换为ssh模式 2.设置SSH keys（1）看看 C:\Users\Administrator.ssh里面是否有文件（2）有就删了（3）生成密匙 输入指令 1.git config –global user.email “862396534@qq.com” # 填写你github注册并且验证的邮箱  2.git config –global user.name “mykon">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-02T18:36:50.078Z">
+<meta property="og:updated_time" content="2019-06-30T14:47:31.304Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="hexo deploy 免密登陆">
+<meta name="twitter:description" content="1.将https模式转换为ssh模式 2.设置SSH keys（1）看看 C:\Users\Administrator.ssh里面是否有文件（2）有就删了（3）生成密匙 输入指令 1.git config –global user.email “862396534@qq.com” # 填写你github注册并且验证的邮箱  2.git config –global user.name “mykon">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/30/hexo-deploy-免密登陆/">
 
 
 
 
 
-  <title>分类 | Hexo</title>
+  <title>hexo deploy 免密登陆 | Hexo</title>
   
 
 
@@ -247,40 +251,175 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/30/hexo-deploy-免密登陆/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mykonons">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 12 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown简单使用说明/">markdown简单使用说明</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/分类/">分类</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端类/">前端类</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/心得感悟及随笔/">心得感悟及随笔</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据结构与算法/">数据结构与算法</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/绘画类/">绘画类</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程心得/">编程心得</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/自学类/">自学类</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">hexo deploy 免密登陆</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-30T22:13:48+08:00">
+                2019-06-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="1-将https模式转换为ssh模式"><a href="#1-将https模式转换为ssh模式" class="headerlink" title="1.将https模式转换为ssh模式 "></a>1.将https模式转换为ssh模式 <br></h2><h2 id="2-设置SSH-keys"><a href="#2-设置SSH-keys" class="headerlink" title="2.设置SSH keys"></a>2.设置SSH keys</h2><p>（1）看看 C:\Users\Administrator.ssh里面是否有文件<br>（2）有就删了<br>（3）生成密匙 输入指令</p>
+<pre><code>1.git config –global user.email “862396534@qq.com” # 填写你github注册并且验证的邮箱
+
+2.git config –global user.name “mykonons” # github 用户名
+
+3.ssh-keygen # 一直按Enter键就行</code></pre><p>（4）打开 C:\Users\Administrator.ssh\id_rsa.pub 文件    复制所有<br>（5）github 用户名头像旁的向下三角号-》setting<br>（6）personal settings -》 ssh and gpg keys-》add keys<br>（7） 将第四步复制的全粘贴到key里<br>（8） ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>（9）编辑_config.yml文件，修改文件里面的deploy，<br>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:mykonons/mykonons.github.io.git<br>  branch: master</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/30/hexo的简单使用/" rel="next" title="hexo的简单使用">
+                <i class="fa fa-chevron-left"></i> hexo的简单使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/03/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -289,6 +428,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -309,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -382,6 +534,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-将https模式转换为ssh模式"><span class="nav-number">1.</span> <span class="nav-text">1.将https模式转换为ssh模式 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-设置SSH-keys"><span class="nav-number">2.</span> <span class="nav-text">2.设置SSH keys</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
